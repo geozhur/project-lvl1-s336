@@ -4,18 +4,22 @@ brain-games
 
 ## Getting Started
 
+```
 brain-games
+```
 
 ### Prerequisites
 
-composer
-
 ```
+composer
+```
+
 Give examples
 ```
 
 ### Installing
 
+```
 composer global require geozhur/brain-games
-
+```
 
