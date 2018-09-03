@@ -2,9 +2,9 @@
 <?php 
 namespace BrainGames\Cli;
 
-foreach(array(__DIR__ . '/../vendor', __DIR__ . '/../../../../vendor') as $vendorDir) {
-	if(is_dir($vendorDir)) {
-		require_once $vendorDir . '/autoload.php';
+foreach(array(__DIR__ . '/../vendor', __DIR__ . '/../../../../vendor') as $vendorDir) {   
+    if(is_dir($vendorDir)) {
+        require_once $vendorDir . '/autoload.php';
 		break;
 	}
 }
