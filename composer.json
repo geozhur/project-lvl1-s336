@@ -1,8 +1,8 @@
 {
     "name": "geozhur/brain-games",
-    "description": "Trening hexlet project",
+    "description": "Training hexlet project",
     "type": "project",
-    "license": "free",
+    "license": "MIT",
     "authors": [
         {
             "name": "Geogry Zhurvlev",
