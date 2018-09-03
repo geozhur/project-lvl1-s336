@@ -1,7 +1,8 @@
 {
     "name": "geozhur/brain-games",
     "description": "Training hexlet project",
-    "type": "application",
+    "type": "project",
+    "keywords": ["console", "cli"],
     "license": "MIT",
     "authors": [
         {
@@ -9,10 +10,17 @@
             "email": "egorich2004@mail.ru"
         }
     ],
+    "autoload": {
+        "psr-4": {
+          "BrainGames\\Cli\\": "src"
+        }
+    },
     "bin": [
         "bin/brain-games"
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "*"
+    }
 }
