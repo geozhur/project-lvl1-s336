@@ -1,7 +1,7 @@
 {
     "name": "geozhur/brain-games",
     "description": "Training hexlet project",
-    "type": "project",
+    "type": "application",
     "license": "MIT",
     "authors": [
         {
