@@ -13,10 +13,7 @@
     "autoload": {
         "psr-4": {
           "BrainGames\\Cli\\": "src/"
-        },         
-        "files": [
-            "src/Cli.php"
-        ]
+        }
     },
     "bin": [
         "bin/brain-games"
