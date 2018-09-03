@@ -13,11 +13,15 @@
     "autoload": {
         "psr-4": {
           "BrainGames\\Cli\\": "src/"
-        }
+        },         
+        "files": [
+            "src/Cli.php"
+        ]
     },
     "bin": [
         "bin/brain-games"
     ],
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
         "wp-cli/php-cli-tools": "*"

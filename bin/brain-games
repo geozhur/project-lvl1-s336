@@ -2,11 +2,13 @@
 <?php 
 namespace BrainGames\Cli;
 
-foreach(array(__DIR__ . '/../vendor', __DIR__ . '/../../../../vendor') as $vendorDir) {   
-    if(is_dir($vendorDir)) {
-        require_once $vendorDir . '/autoload.php';
-		break;
-	}
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+if (file_exists($autoloadPath1)) {
+    require_once $autoloadPath1;
+} else {
+    require_once $autoloadPath2;
 }
+
 
 run();
