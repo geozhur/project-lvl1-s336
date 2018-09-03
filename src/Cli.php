@@ -3,7 +3,8 @@ namespace BrainGames\Cli;
 
 use function \cli\line;
 
-function run() {
+function run() 
+{
     line('Welcome to the Brain Game!');
     line();
     $name = \cli\prompt('May I have your name?');
