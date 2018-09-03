@@ -18,7 +18,7 @@
     "bin": [
         "bin/brain-games"
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "wp-cli/php-cli-tools": "*"
