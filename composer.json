@@ -1,0 +1,17 @@
+{
+    "name": "geozhur/brain-games",
+    "description": "Trening hexlet project",
+    "type": "project",
+    "license": "free",
+    "authors": [
+        {
+            "name": "Geogry Zhurvlev",
+            "email": "egorich2004@mail.ru"
+        }
+    ],
+    "bin": [
+        "bin/brain-games"
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
