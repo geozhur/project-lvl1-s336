@@ -13,5 +13,6 @@
         "bin/brain-games"
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {}
 }
