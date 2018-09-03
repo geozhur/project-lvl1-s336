@@ -1,5 +1,6 @@
 Training hexlet project
 ======================
+[![Code Climate](https://codeclimate.com/github/geozhur/project-lvl1-s336/badges/gpa.svg)](https://codeclimate.com/github/geozhur/project-lvl1-s336)
 
 Brain-games
 
