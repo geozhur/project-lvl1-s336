@@ -13,6 +13,10 @@ To install with composer:
 composer global require geozhur/brain-games
 ```
 
+### Demo
+
+[![asciicast](https://asciinema.org/a/hxTyTN1G0gyoyr6rpJCuKa5qU.png)](https://asciinema.org/a/hxTyTN1G0gyoyr6rpJCuKa5qU)
+
 ## Getting Started
 
 ```
