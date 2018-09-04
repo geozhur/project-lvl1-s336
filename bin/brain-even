@@ -1,0 +1,53 @@
+#!/usr/bin/env php
+<?php
+
+namespace BrainGames\Cli;
+
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+if (file_exists($autoloadPath1)) {
+    require_once $autoloadPath1;
+} else {
+    require_once $autoloadPath2;
+}
+
+$condition = 'Answer "yes" if number even otherwise answer "no".';
+$wrong = "'%s' is wrong answer ;(. Correct answer was '%s'";
+$bed = "Let's try again, %s";
+$good = "Congratulations, %s";
+$correct = "Correct!";
+$textAnswer = "Question: %d";
+$textQuestion = "Your answer";
+$questionName = "May I have your name?";
+$helloName = "Hello, %s!";
+
+printWelcome();
+printMessage($condition);
+$name = getName($questionName, $helloName);
+$flag = false;
+for ($i = 0; $i < 3; $i++) {
+    $flag = checkQuestion(
+        $textAnswer,
+        $textQuestion,
+        rand(1, getrandmax()),
+        function ($question, $answer) use ($correct, $wrong) {
+            $question = isEven($question) ? "yes" : "no";
+            if ($answer === $question) {
+                printMessage($correct);
+            } else {
+                printWrong($wrong, $answer, $question);
+            }
+            return $answer === $question ? true : false;
+        }
+    );
+
+    if (!$flag) {
+        break;
+    }
+}
+
+if ($flag) {
+    printName($good, $name);
+} else {
+    printName($bed, $name);
+}

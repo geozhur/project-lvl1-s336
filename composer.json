@@ -19,7 +19,8 @@
         ]
     },
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
