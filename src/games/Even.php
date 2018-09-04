@@ -6,13 +6,12 @@ function genQuestionEven($textAnswer)
 {
     $result = rand(1, getrandmax());
     $textAnswer.= $result;
-
     return [$result, $textAnswer];
 }
 
 function runEven()
 {
-    $condition = 'Answer "yes" if number even otherwise answer "no".';
+    $condition = "Answer \"yes\" if number even otherwise answer \"no\".";
     $wrong = "'%s' is wrong answer ;(. Correct answer was '%s'";
     $bed = "Let's try again, %s";
     $good = "Congratulations, %s";
