@@ -10,10 +10,13 @@
             "email": "egorich2004@mail.ru"
         }
     ],
+    "scripts": {
+        "phpcs": "phpcs"
+    },
     "autoload": {
-        "psr-4": {
-          "BrainGames\\Cli\\": "src/"
-        }
+        "files": [
+            "src/Cli.php"
+        ]
     },
     "bin": [
         "bin/brain-games"
@@ -22,5 +25,8 @@
     "prefer-stable": true,
     "require": {
         "wp-cli/php-cli-tools": "*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
     }
 }

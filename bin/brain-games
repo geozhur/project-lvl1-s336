@@ -1,5 +1,5 @@
 #!/usr/bin/env php
-<?php 
+<?php
 
 namespace BrainGames\Cli;
 
@@ -11,5 +11,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-$game = new Cli();
-$game->run();
+run();

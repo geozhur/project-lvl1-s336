@@ -1,5 +1,6 @@
 Training hexlet project
 ======================
+[![Build Status](https://travis-ci.org/geozhur/project-lvl1-s336.svg?branch=master)](https://travis-ci.org/geozhur/project-lvl1-s336)
 [![Code Climate](https://codeclimate.com/github/geozhur/project-lvl1-s336/badges/gpa.svg)](https://codeclimate.com/github/geozhur/project-lvl1-s336)
 
 Brain-games
