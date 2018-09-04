@@ -15,12 +15,16 @@
     },
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/Common.php",
+            "src/games/Even.php",
+            "src/games/Calc.php"
         ]
     },
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
