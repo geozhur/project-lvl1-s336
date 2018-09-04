@@ -15,7 +15,12 @@ composer global require geozhur/brain-games
 
 ### Demo
 
-[![asciicast](https://asciinema.org/a/hxTyTN1G0gyoyr6rpJCuKa5qU.png)](https://asciinema.org/a/hxTyTN1G0gyoyr6rpJCuKa5qU)
+[![asciicast](https://asciinema.org/a/P2RV5ivMnh6g9gBeYNF2U4f5D.png)](https://asciinema.org/a/P2RV5ivMnh6g9gBeYNF2U4f5D)
+
+## List games
+
+1. brain-games
+2. brain-even
 
 ## Getting Started
 
@@ -28,10 +33,6 @@ brain-games
 ```
 composer
 ```
-
-Function List
-
-BrainGames\Cli\run();
 
 Will have the same result as:
 ```
