@@ -24,47 +24,25 @@ function genQuestionCalc($textAnswer)
     return [$result, $textAnswer];
 }
 
+function checkQuestionCalc($question, $answer, $text)
+{
+    if ($answer == $question) {
+        printMessage($text['correct']);
+    } else {
+        printWrong($text['wrong'], $answer, $question);
+    }
+    return $answer == $question ? true : false;
+}
+
 function runCalc()
 {
-    $condition = "What is the result of the expression?";
-    $wrong = "'%s' is wrong answer ;(. Correct answer was '%s'";
-    $bed = "Let's try again, %s";
-    $good = "Congratulations, %s";
-    $correct = "Correct!";
-    $textAnswer = "Question: ";
-    $textQuestion = "Your answer";
-    $questionName = "May I have your name?";
-    $helloName = "Hello, %s!";
-
-    printWelcome();
-    printMessage($condition);
-    $name = getName($questionName, $helloName);
-    $flag = false;
-    for ($i = 0; $i < 3; $i++) {
-        [$result, $textAnswerGen] = genQuestionCalc($textAnswer);
-        
-        $flag = checkQuestion(
-            $textAnswerGen,
-            $textQuestion,
-            $result,
-            function ($question, $answer) use ($correct, $wrong) {
-                if ($answer == $question) {
-                    printMessage($correct);
-                } else {
-                    printWrong($wrong, $answer, $question);
-                }
-                return $answer == $question ? true : false;
-            }
-        );
-
-        if (!$flag) {
-            break;
+    runTextGame(
+        "What is the result of the expression?",
+        function ($textAnswer) {
+            return genQuestionCalc($textAnswer);
+        },
+        function ($question, $answer, $text) {
+            return checkQuestionCalc($question, $answer, $text);
         }
-    }
-
-    if ($flag) {
-        printName($good, $name);
-    } else {
-        printName($bed, $name);
-    }
+    );
 }
