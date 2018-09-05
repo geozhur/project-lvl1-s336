@@ -3,6 +3,7 @@
 namespace BrainGames\Cli;
 
 use function \cli\line;
+use function \cli\prompt;
 
 function run()
 {
@@ -10,5 +11,8 @@ function run()
     $helloName = "Hello, %s!";
     line();
     line('Welcome to the Brain Game!');
-    \BrainGames\Common\getName($questionName, $helloName);
+    line();
+    $name = prompt("May I have your name?");
+    line("Hello, %s!", $name);
+    line();
 }

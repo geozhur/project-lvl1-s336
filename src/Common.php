@@ -5,60 +5,31 @@ namespace BrainGames\Common;
 use function \cli\line;
 use function \cli\prompt;
 
-function getName($question, $helloname)
+const NUMBERQUESTIONS = 3;
+
+function runTextGame($condition, $getQuestionAndRightAnswer)
 {
     line();
-    $name = prompt($question);
-    line($helloname, $name);
+    line("Welcome to the Brain Game!");
+    line($condition);
     line();
-    return $name;
-}
-
-function getText()
-{
-    return array(
-        'welcome' => "Welcome to the Brain Game!",
-        'condition' => "What is the result of the expression?",
-        'wrong' => "'%s' is wrong answer ;(. Correct answer was '%s'",
-        'bed' => "Let's try again, %s",
-        'good' => "Congratulations, %s",
-        'correct' => "Correct!",
-        'question' => "Question: ",
-        'answer' => "Your answer",
-        'questionName' => "May I have your name?",
-        'helloName' => "Hello, %s!",
-    );
-}
-
-function runTextGame($condition, $numberQuestions, $getQuestionAndRightAnswer)
-{
-    $text = getText();
-    $text['condition'] = $condition;
-
+    $name = prompt("May I have your name?");
+    line("Hello, %s!", $name);
     line();
-    line($text['welcome']);
-    line($text['condition']);
-    $name = getName($text['questionName'], $text['helloName']);
-    $flag = false;
-    for ($i = 0; $i < $numberQuestions; $i++) {
-        [$textQuestion, $rightAnswer] = $getQuestionAndRightAnswer($text['question']);
+    for ($i = 0; $i < NUMBERQUESTIONS; $i++) {
+        [$question, $rightAnswer] = $getQuestionAndRightAnswer();
 
-        line($textQuestion);
-        $answer = prompt($text['answer']);
+        line("Question: " . $question);
+        $answer = prompt("Your answer");
 
         if ($answer == $rightAnswer) {
-            line($text['correct']);
-            $flag = true;
+            line("Correct!");
         } else {
-            line($text['wrong'], $answer, $rightAnswer);
-            $flag = false;
-            break;
+            line("'%s' is wrong answer ;(. Correct answer was '%s'", $answer, $rightAnswer);
+            line("Let's try again, %s", $name);
+            exit;
         }
     }
 
-    if ($flag) {
-        line($text['good'], $name);
-    } else {
-        line($text['bed'], $name);
-    }
+    line("Congratulations, %s", $name);
 }

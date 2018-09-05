@@ -4,7 +4,7 @@ namespace BrainGames\Calc;
 
 use function \BrainGames\Common\runTextGame;
 
-function getQuestionAndRightAnswerCalc($textQuestion)
+function getQuestionAndRightAnswerCalc()
 {
     $num1 = rand(1, 100);
     $num2 = rand(1, 100);
@@ -22,17 +22,16 @@ function getQuestionAndRightAnswerCalc($textQuestion)
             $rightAnswer = $num1 * $num2;
             break;
     }
-    $textQuestion .= $num1 . " " . $act . " " . $num2;
-    return [$textQuestion, $rightAnswer];
+    $question = $num1 . " " . $act . " " . $num2;
+    return [$question, $rightAnswer];
 }
 
 function runCalc()
 {
     runTextGame(
         "What is the result of the expression?",
-        3,
-        function ($textQuestion) {
-            return \BrainGames\Calc\getQuestionAndRightAnswerCalc($textQuestion);
+        function () {
+            return \BrainGames\Calc\getQuestionAndRightAnswerCalc();
         }
     );
 }

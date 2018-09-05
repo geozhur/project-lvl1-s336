@@ -17,23 +17,22 @@ function getGcd($num1, $num2)
     return $num2;
 }
 
-function getQuestionAndRightAnswerGcd($textQuestion)
+function getQuestionAndRightAnswerGcd()
 {
     $num1 = rand(1, 100);
     $num2 = rand(1, 100);
 
     $rightAnswer = getGcd($num1, $num2);
-    $textQuestion .= $num1 . " " . $num2;
-    return [$textQuestion, $rightAnswer];
+    $question = $num1 . " " . $num2;
+    return [$question, $rightAnswer];
 }
 
 function runGcd()
 {
     runTextGame(
         "Find the greatest common divisor of given numbers.",
-        3,
-        function ($textQuestion) {
-            return \BrainGames\Gcd\getQuestionAndRightAnswerGcd($textQuestion);
+        function () {
+            return \BrainGames\Gcd\getQuestionAndRightAnswerGcd();
         }
     );
 }
