@@ -5,10 +5,10 @@ namespace BrainGames\Common;
 use function \cli\line;
 use function \cli\prompt;
 
-const NUMBERQUESTIONS = 3;
-
 function runTextGame($condition, $getQuestionAndRightAnswer)
 {
+    $numberQuestions = 3;
+    
     line();
     line("Welcome to the Brain Game!");
     line($condition);
@@ -16,7 +16,7 @@ function runTextGame($condition, $getQuestionAndRightAnswer)
     $name = prompt("May I have your name?");
     line("Hello, %s!", $name);
     line();
-    for ($i = 0; $i < NUMBERQUESTIONS; $i++) {
+    for ($i = 0; $i < $numberQuestions; $i++) {
         [$question, $rightAnswer] = $getQuestionAndRightAnswer();
 
         line("Question: " . $question);
