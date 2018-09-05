@@ -2,10 +2,13 @@
 
 namespace BrainGames\Cli;
 
+use function \cli\line;
+
 function run()
 {
     $questionName = "May I have your name?";
     $helloName = "Hello, %s!";
-    printWelcome();
-    getName($questionName, $helloName);
+    line();
+    line('Welcome to the Brain Game!');
+    \BrainGames\Common\getName($questionName, $helloName);
 }

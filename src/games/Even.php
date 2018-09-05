@@ -1,34 +1,29 @@
 <?php
 
-namespace BrainGames\Cli;
+namespace BrainGames\Even;
 
-function genQuestionEven($textAnswer)
+use function \BrainGames\Common\runTextGame;
+
+function isEven($num)
 {
-    $result = rand(1, getrandmax());
-    $textAnswer.= $result;
-    return [$result, $textAnswer];
+    return $num % 2 ? false : true;
 }
 
-function checkQuestionEven($question, $answer, $text)
+function getQuestionAndRightAnswerEven($textQuestion)
 {
-    $question = isEven($question) ? "yes" : "no";
-    if ($answer === $question) {
-        printMessage($text['correct']);
-    } else {
-        printWrong($text['wrong'], $answer, $question);
-    }
-    return $answer === $question ? true : false;
+    $rand = rand(1, getrandmax());
+    $textQuestion .= $rand;
+    $rightAnswer = isEven($rand) ? "yes" : "no";
+    return [$textQuestion, $rightAnswer];
 }
 
 function runEven()
 {
     runTextGame(
         "Answer \"yes\" if number even otherwise answer \"no\".",
-        function ($textAnswer) {
-            return genQuestionEven($textAnswer);
-        },
-        function ($question, $answer, $text) {
-            return checkQuestionEven($question, $answer, $text);
+        3,
+        function ($textQuestion) {
+            return \BrainGames\Even\getQuestionAndRightAnswerEven($textQuestion);
         }
     );
 }
