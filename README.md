@@ -27,8 +27,7 @@ composer global require geozhur/brain-games
 
 [![asciicast](https://asciinema.org/a/3Pf8JjCY6WBvNyLRntKHefpJx.png)](https://asciinema.org/a/3Pf8JjCY6WBvNyLRntKHefpJx)
 
-[![asciicast](https://asciinema.org/a/N53BH8dBthchrxdzueVQG1iyR.png)]
-(https://asciinema.org/a/N53BH8dBthchrxdzueVQG1iyR)
+[![asciicast](https://asciinema.org/a/N53BH8dBthchrxdzueVQG1iyR.png)](https://asciinema.org/a/N53BH8dBthchrxdzueVQG1iyR)
 
 ## Getting Started
 
