@@ -31,5 +31,5 @@ function runTextGame($condition, $getQuestionAndRightAnswer)
         }
     }
 
-    line("Congratulations, %s", $name);
+    line("Congratulations, %s!", $name);
 }

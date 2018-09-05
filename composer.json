@@ -19,14 +19,16 @@
             "src/Common.php",
             "src/games/Even.php",
             "src/games/Calc.php",
-            "src/games/Gcd.php"
+            "src/games/Gcd.php",
+            "src/games/Balance.php"
         ]
     },
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-balance"
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
