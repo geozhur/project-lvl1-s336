@@ -44,6 +44,9 @@ Hello, gary!
 
 [![asciicast](https://asciinema.org/a/Oa9zpHBnweNSY9EUQyzC0Mtn7.png)](https://asciinema.org/a/Oa9zpHBnweNSY9EUQyzC0Mtn7)
 
+7. brain-prime
+
+[![asciicast](https://asciinema.org/a/IPxwGB8VEeiK2Fqqvi6AjzBTb.png)](https://asciinema.org/a/IPxwGB8VEeiK2Fqqvi6AjzBTb)
 
 ## Getting Started
 
@@ -54,5 +57,6 @@ brain-even
 brain-gcd
 brain-balance
 brain-progression
+brain-prime
 ```
 
