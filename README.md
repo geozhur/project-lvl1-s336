@@ -20,6 +20,7 @@ composer global require geozhur/brain-games
 3. brain-calc
 4. brain-gcd
 5. brain-balance
+6. brain-progression
 
 [![asciicast](https://asciinema.org/a/DL5EkbmDxPQXDLT5jwHkp1P1m.png)](https://asciinema.org/a/DL5EkbmDxPQXDLT5jwHkp1P1m)
 
@@ -29,6 +30,9 @@ composer global require geozhur/brain-games
 
 [![asciicast](https://asciinema.org/a/N53BH8dBthchrxdzueVQG1iyR.png)](https://asciinema.org/a/N53BH8dBthchrxdzueVQG1iyR)
 
+[![asciicast](https://asciinema.org/a/Oa9zpHBnweNSY9EUQyzC0Mtn7.png)](https://asciinema.org/a/Oa9zpHBnweNSY9EUQyzC0Mtn7)
+
+
 ## Getting Started
 
 ```
@@ -37,5 +41,6 @@ brain-calc
 brain-even
 brain-gcd
 brain-balance
+brain-progression
 ```
 
