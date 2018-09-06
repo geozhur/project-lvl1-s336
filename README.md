@@ -26,11 +26,11 @@ Hello, gary!
 ```
 2. brain-even
 
-[![asciicast](https://asciinema.org/a/DL5EkbmDxPQXDLT5jwHkp1P1m.png)](https://asciinema.org/a/DL5EkbmDxPQXDLT5jwHkp1P1m)
+[![asciicast](https://asciinema.org/a/P2RV5ivMnh6g9gBeYNF2U4f5D.png)](https://asciinema.org/a/P2RV5ivMnh6g9gBeYNF2U4f5D)
 
 3. brain-calc
 
-[![asciicast](https://asciinema.org/a/P2RV5ivMnh6g9gBeYNF2U4f5D.png)](https://asciinema.org/a/P2RV5ivMnh6g9gBeYNF2U4f5D)
+[![asciicast](https://asciinema.org/a/DL5EkbmDxPQXDLT5jwHkp1P1m.png)](https://asciinema.org/a/DL5EkbmDxPQXDLT5jwHkp1P1m)
 
 4. brain-gcd
 
