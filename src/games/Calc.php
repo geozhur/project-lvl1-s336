@@ -22,7 +22,7 @@ function getQuestionAndRightAnswerCalc()
             $rightAnswer = $num1 * $num2;
             break;
     }
-    $question = $num1 . " " . $act . " " . $num2;
+    $question = "{$num1} {$act} {$num2}";
     return [$question, $rightAnswer];
 }
 

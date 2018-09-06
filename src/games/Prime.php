@@ -8,7 +8,7 @@ const MAX_NUM_PRIME = 1000;
 
 function isPrime($num)
 {
-    if ($num == 1) {
+    if ($num < 2) {
         return false;
     }
 

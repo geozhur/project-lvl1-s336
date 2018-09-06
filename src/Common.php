@@ -14,22 +14,22 @@ function runTextGame($condition, $getQuestionAndRightAnswer)
     line($condition);
     line();
     $name = prompt("May I have your name?");
-    line("Hello, %s!", $name);
+    line("Hello, {$name}!");
     line();
     for ($i = 0; $i < NUMBER_QUESTIONS; $i++) {
         [$question, $rightAnswer] = $getQuestionAndRightAnswer();
 
-        line("Question: " . $question);
+        line("Question: {$question}");
         $answer = prompt("Your answer");
 
         if ($answer == $rightAnswer) {
             line("Correct!");
         } else {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'", $answer, $rightAnswer);
-            line("Let's try again, %s", $name);
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$rightAnswer}'");
+            line("Let's try again, {$name}");
             return;
         }
     }
 
-    line("Congratulations, %s!", $name);
+    line("Congratulations, {$name}!");
 }

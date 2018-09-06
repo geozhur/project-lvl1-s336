@@ -23,7 +23,7 @@ function getQuestionAndRightAnswerGcd()
     $num2 = rand(1, 100);
 
     $rightAnswer = getGcd($num1, $num2);
-    $question = $num1 . " " . $num2;
+    $question = "{$num1} {$num2}";
     return [$question, $rightAnswer];
 }
 
